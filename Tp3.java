@@ -232,20 +232,9 @@ class Grafos {
 	 * metodo para busca em largura
 	 */
 	public void buscaPorLargura ( ) {
-		int u = 0;
-		fila.add(0);
-		while ( !fila.isEmpty() ) {
-			u = fila.remove();
-			for ( int v = 0; v < numVertices; v ++ ) {
-				if ( matriz[u][v] != 0 && cor[v] == 0 ) {
-					cor[v] = 1;
-					distancia[v] = distancia[u] + 1;
-					pai[v] = u;
-					fila.add(v);
-				}
-			}
+		for (int i = 0 ; i < 40 ; i++ ) {
+			System.out.println("TetstSTSTSTSTS");
 		}
-		cor[u] = 2;
 	}
 
 	/**
@@ -431,8 +420,7 @@ class Tp3 {
 
 			if (i < lista.size() - 1) {
 				System.out.print(materias[aux] + " - ");
-			} 
-			else {
+			} else {
 				System.out.print(materias[aux]);
 			}
 		}
